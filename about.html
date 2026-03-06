@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Shuman Bookkeeping & Tax Preparation, SVC LLC</title>
-    <meta name="description" content="Learn about Shuman Bookkeeping - our mission, team, and commitment to helping small businesses succeed financially.">
+    <title>About Us | Shuman Bookkeeping & Tax Preparation</title>
+    <meta name="description" content="Learn about Shuman Bookkeeping & Tax Preparation - our team, our values, and our mission to help small businesses succeed.">
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p><i class="fas fa-calendar-check"></i> Tax Season Special: Free initial consultation for new clients <a href="#contact">Book Now</a></p>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <span class="logo-icon">📊</span>
-                <span class="logo-text">Shuman Bookkeeping</span>
+                <div class="logo-mark">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-company">Shuman</span>
+                    <span class="logo-tagline">Bookkeeping & Tax</span>
+                </div>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
@@ -30,7 +46,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html" class="active">About</a></li>
-                <li><a href="index.html#contact" class="btn btn-primary">Contact Us</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary">Get Started</a></li>
             </ul>
         </div>
     </nav>
@@ -38,38 +54,47 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <span class="section-tag">Our Story</span>
-            <h1>About Shuman Bookkeeping</h1>
-            <p>Committed to helping businesses thrive through expert financial management</p>
+            <span class="section-tag">About Us</span>
+            <h1>Meet the Team<br><span class="text-gradient">Behind the Numbers</span></h1>
+            <p>We're more than just accountants—we're your partners in financial success.</p>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission-section">
+    <!-- Story Section -->
+    <section class="our-story">
         <div class="container">
-            <div class="mission-grid">
-                <div class="mission-content">
-                    <h2>Our Mission</h2>
-                    <p class="lead">To provide small businesses with the financial clarity and confidence they need to make smart decisions and achieve their goals.</p>
-                    <p>At Shuman Bookkeeping & Tax Preparation, we believe that every business deserves access to professional-grade financial management. We're here to be your trusted partner in financial success, handling the numbers so you can focus on what you do best.</p>
-                    <p>Since 2010, we've helped hundreds of businesses across the tri-state area stay organized, compliant, and profitable. Our commitment to accuracy, integrity, and personalized service sets us apart.</p>
+            <div class="story-grid">
+                <div class="story-content">
+                    <span class="section-tag">Our Story</span>
+                    <h2>Built on Trust, Driven by Excellence</h2>
+                    <p class="lead">Founded in 2010, Shuman Bookkeeping & Tax Preparation started with a simple mission: to provide small businesses with the same level of financial expertise that large corporations enjoy.</p>
+                    
+                    <p>What began as a one-person operation has grown into a team of dedicated professionals, but our core values remain the same. We believe in building lasting relationships with our clients, taking the time to understand their unique needs, and delivering personalized service that makes a real difference.</p>
+                    
+                    <p>Today, we're proud to serve over 500 businesses across the tri-state area, helping them navigate the complexities of bookkeeping, taxation, and financial planning.</p>
+                    
+                    <div class="story-stats">
+                        <div class="story-stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Businesses Served</span>
+                        </div>
+                        <div class="story-stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="story-stat">
+                            <span class="stat-number">$2.5M+</span>
+                            <span class="stat-label">Tax Savings</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="mission-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Businesses Served</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Accuracy Guarantee</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">24hr</span>
-                        <span class="stat-label">Response Time</span>
+                
+                <div class="story-visual">
+                    <div class="story-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                            <span>Our Office</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,141 +102,141 @@
     </section>
 
     <!-- Values Section -->
-    <section class="values-section">
+    <section class="our-values">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">What Drives Us</span>
-                <h2>Our Core Values</h2>
-                <p>The principles that guide everything we do</p>
+                <span class="section-tag">Our Values</span>
+                <h2>What Drives Us</h2>
+                <p>These core values guide everything we do at Shuman Bookkeeping.</p>
             </div>
+            
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-icon">🎯</div>
-                    <h3>Accuracy First</h3>
-                    <p>We take precision seriously. Your financial records are too important to contain errors. Our rigorous quality control ensures 100% accuracy.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Client-First</h3>
+                    <p>Your success is our success. We prioritize your needs and work tirelessly to help you achieve your financial goals.</p>
                 </div>
+                
                 <div class="value-card">
-                    <div class="value-icon">🤝</div>
-                    <h3>Trust & Transparency</h3>
-                    <p>We build lasting relationships through honest communication and complete transparency. You'll always know the status of your finances.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>We hold ourselves to the highest standards in everything we do, from accuracy in your books to responsiveness in our communication.</p>
                 </div>
+                
                 <div class="value-card">
-                    <div class="value-icon">💡</div>
-                    <h3>Proactive Advice</h3>
-                    <p>We don't just crunch numbers – we provide insights and recommendations to help your business grow and save money.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>Trust is the foundation of our work. We handle your finances with the utmost care, confidentiality, and ethical standards.</p>
                 </div>
+                
                 <div class="value-card">
-                    <div class="value-icon">📈</div>
-                    <h3>Continuous Improvement</h3>
-                    <p>We're always learning and adapting to provide the best service. New tax laws, new technologies, new opportunities – we stay current so you stay ahead.</p>
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We embrace the latest technology and best practices to deliver efficient, modern solutions for your business.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team-section">
+    <section class="our-team">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Meet The Team</span>
-                <h2>Your Financial Partners</h2>
-                <p>Experienced professionals dedicated to your success</p>
+                <h2>The People Behind the Practice</h2>
+                <p>Our team combines decades of experience with a passion for helping businesses thrive.</p>
             </div>
+            
             <div class="team-grid">
                 <div class="team-card">
-                    <div class="team-avatar">
-                        <span>JS</span>
+                    <div class="team-photo">
+                        <div class="photo-placeholder">JS</div>
                     </div>
                     <h3>John Shuman</h3>
-                    <span class="team-title">Founder & Lead Accountant</span>
-                    <p>With over 20 years of experience in accounting and tax preparation, John founded Shuman Bookkeeping to help small businesses navigate the complexities of financial management. He's a CPA with expertise in business taxation and financial planning.</p>
+                    <span class="team-title">Founder & Lead CPA</span>
+                    <p>With over 20 years of experience in public accounting, John founded Shuman Bookkeeping to fill a gap in the market for personalized, high-quality financial services for small businesses.</p>
                     <div class="team-credentials">
-                        <span class="credential">CPA</span>
-                        <span class="credential">QuickBooks ProAdvisor</span>
+                        <span><i class="fas fa-certificate"></i> CPA</span>
+                        <span><i class="fas fa-graduation-cap"></i> MBA</span>
                     </div>
                 </div>
+                
                 <div class="team-card">
-                    <div class="team-avatar">
-                        <span>SM</span>
+                    <div class="team-photo">
+                        <div class="photo-placeholder">SM</div>
                     </div>
                     <h3>Sarah Mitchell</h3>
                     <span class="team-title">Senior Bookkeeper</span>
-                    <p>Sarah brings 12 years of bookkeeping expertise to our team. She specializes in monthly close processes and has helped dozens of businesses implement efficient financial systems.</p>
+                    <p>Sarah brings 12 years of bookkeeping experience and specializes in helping retail and e-commerce businesses organize their finances and improve cash flow.</p>
                     <div class="team-credentials">
-                        <span class="credential">Certified Bookkeeper</span>
-                        <span class="credential">AP/AR Specialist</span>
+                        <span><i class="fas fa-certificate"></i> QuickBooks ProAdvisor</span>
                     </div>
                 </div>
+                
                 <div class="team-card">
-                    <div class="team-avatar">
-                        <span>MR</span>
+                    <div class="team-photo">
+                        <div class="photo-placeholder">MR</div>
                     </div>
                     <h3>Mike Rodriguez</h3>
                     <span class="team-title">Tax Specialist</span>
-                    <p>Mike is our go-to expert for complex tax situations. With a background in corporate tax and extensive knowledge of small business deductions, he helps clients maximize their tax savings.</p>
+                    <p>Mike is our tax expert with a deep knowledge of business taxation. He stays current on all tax law changes to ensure clients maximize their deductions.</p>
                     <div class="team-credentials">
-                        <span class="credential">EA (Enrolled Agent)</span>
-                        <span class="credential">Tax Planning Expert</span>
+                        <span><i class="fas fa-certificate"></i> EA</span>
+                        <span><i class="fas fa-graduation-cap"></i> MS Tax</span>
                     </div>
                 </div>
+                
                 <div class="team-card">
-                    <div class="team-avatar">
-                        <span>EC</span>
+                    <div class="team-photo">
+                        <div class="photo-placeholder">EL</div>
                     </div>
-                    <h3>Emily Chen</h3>
+                    <h3>Emily Liu</h3>
                     <span class="team-title">Payroll Manager</span>
-                    <p>Emily ensures your employees get paid accurately and on time. She manages payroll for over 100 businesses and handles everything from simple bi-weekly payroll to complex multi-state situations.</p>
+                    <p>Emily ensures accurate, timely payroll for all our clients. Her attention to detail and process expertise keep our clients' teams happy and compliant.</p>
                     <div class="team-credentials">
-                        <span class="credential">Payroll Certified</span>
-                        <span class="credential">HR Specialist</span>
+                        <span><i class="fas fa-certificate"></i> CPP</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Credentials Section -->
-    <section class="credentials-section">
+    <!-- Trust Section -->
+    <section class="trust-indicators">
         <div class="container">
-            <div class="credentials-content">
-                <h2>Professional Credentials & Certifications</h2>
-                <p>We're committed to maintaining the highest professional standards</p>
-                <div class="credentials-list">
-                    <div class="credential-item">
-                        <span class="credential-icon">✓</span>
-                        <div>
-                            <h4>Certified Public Accountant (CPA)</h4>
-                            <p>All our tax preparers are licensed CPAs or Enrolled Agents</p>
-                        </div>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-icon">✓</span>
-                        <div>
-                            <h4>QuickBooks ProAdvisor</h4>
-                            <p>Certified experts in QuickBooks Online and Desktop</p>
-                        </div>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-icon">✓</span>
-                        <div>
-                            <h4>American Institute of Certified Public Accountants (AICPA)</h4>
-                            <p>Member in good standing</p>
-                        </div>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-icon">✓</span>
-                        <div>
-                            <h4>Enrolled Agents (EA)</h4>
-                            <p>IRS-authorized tax practitioners</p>
-                        </div>
-                    </div>
-                    <div class="credential-item">
-                        <span class="credential-icon">✓</span>
-                        <div>
-                            <h4>Certified Bookkeepers</h4>
-                            <p>Professionally certified by the American Institute of Professional Bookkeepers</p>
-                        </div>
-                    </div>
+            <div class="trust-content">
+                <h2>Certifications & Affiliations</h2>
+                <p>We maintain the highest professional standards through ongoing education and certification.</p>
+            </div>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>CPA Certified</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Insured & Bonded</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure Data Center</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>QuickBooks ProAdvisor</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-users"></i>
+                    <span>AICPA Member</span>
                 </div>
             </div>
         </div>
@@ -220,9 +245,96 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Let's Work Together</h2>
-            <p>Ready to experience the Shuman Bookkeeping difference? We'd love to hear from you.</p>
-            <a href="index.html#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Ready to Work Together?</h2>
+                    <p> We'd love to learn about your business and show you how we can help.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn btn-primary btn-lg">Schedule Free Consultation</a>
+                    <a href="services.html" class="btn btn-outline btn-lg">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Let's Start a Conversation</h2>
+                    <p>Have questions? We'd love to hear from you. Reach out to schedule a consultation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Office</strong>
+                                <p>123 Business Park Drive<br>Suite 100<br>City, State 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@shumanbookkeeping.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="bookkeeping">Monthly Bookkeeping</option>
+                                <option value="tax-prep">Tax Preparation</option>
+                                <option value="payroll">Payroll Services</option>
+                                <option value="consulting">Financial Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Needs *</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -232,47 +344,54 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <span class="logo-icon">📊</span>
-                        <span class="logo-text">Shuman Bookkeeping</span>
+                        <div class="logo-mark">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-company">Shuman</span>
+                            <span class="logo-tagline">Bookkeeping & Tax</span>
+                        </div>
                     </a>
-                    <p>Trusted professionals providing expert bookkeeping and tax preparation services to businesses since 2010.</p>
+                    <p>Trusted financial partner for businesses in the tri-state area. Delivering accuracy, compliance, and peace of mind since 2010.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
+                
                 <div class="footer-links">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
-                        <li><a href="services.html#tax">Tax Preparation</a></li>
-                        <li><a href="services.html#payroll">Payroll Services</a></li>
-                        <li><a href="services.html#consulting">Financial Consulting</a></li>
+                        <li><a href="services.html">Bookkeeping</a></li>
+                        <li><a href="services.html">Tax Preparation</a></li>
+                        <li><a href="services.html">Payroll Services</a></li>
+                        <li><a href="services.html">Financial Consulting</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p><span>📧</span> info@shumanbookkeeping.com</p>
-                    <p><span>📞</span> (555) 123-4567</p>
-                    <p><span>📍</span> Serving tri-state area</p>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get tax tips and financial insights delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
                 </div>
             </div>
+            
             <div class="footer-bottom">
                 <p>&copy; 2026 Shuman Bookkeeping & Tax Preparation, SVC LLC. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
             </div>
         </div>
     </footer>

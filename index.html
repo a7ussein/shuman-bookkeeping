@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shuman Bookkeeping & Tax Preparation, SVC LLC | Professional Financial Services</title>
-    <meta name="description" content="Expert bookkeeping and tax preparation services for small businesses. Trusted professionals helping you manage your finances with precision.">
+    <title>Shuman Bookkeeping & Tax Preparation | Expert Financial Services</title>
+    <meta name="description" content="Premium bookkeeping and tax preparation services for small businesses. Certified CPAs delivering accuracy, compliance, and financial peace of mind.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p><i class="fas fa-calendar-check"></i> Tax Season Special: Free initial consultation for new clients <a href="#contact">Book Now</a></p>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <span class="logo-icon">📊</span>
-                <span class="logo-text">Shuman Bookkeeping</span>
+                <div class="logo-mark">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-company">Shuman</span>
+                    <span class="logo-tagline">Bookkeeping & Tax</span>
+                </div>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
@@ -30,33 +45,105 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+                <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Expert Bookkeeping & Tax Services for Your Business</h1>
-                <p class="hero-subtitle">Trusted professionals dedicated to simplifying your financial management and maximizing your tax savings.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg">Get Free Consultation</a>
-                    <a href="services.html" class="btn btn-outline btn-lg">Our Services</a>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Serving Tri-State Businesses Since 2010
                 </div>
-                <div class="hero-features">
-                    <div class="feature-badge">
-                        <span class="badge-icon">✓</span>
-                        <span>Certified Professionals</span>
+                <h1 class="hero-title">Your Finances,<br><span class="text-gradient">Our Expertise.</span></h1>
+                <p class="hero-subtitle">Award-winning bookkeeping and tax preparation tailored to your business. We handle the numbers so you can focus on growth.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Businesses Served</span>
                     </div>
-                    <div class="feature-badge">
-                        <span class="badge-icon">✓</span>
-                        <span>100% Accuracy Guaranteed</span>
+                    <div class="stat-item">
+                        <span class="stat-number">$2.5M+</span>
+                        <span class="stat-label">Tax Savings</span>
                     </div>
-                    <div class="feature-badge">
-                        <span class="badge-icon">✓</span>
-                        <span>Same-Day Responses</span>
+                    <div class="stat-item">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calendar-alt"></i> Schedule Free Consultation
+                    </a>
+                    <a href="services.html" class="btn btn-outline btn-lg">
+                        View Our Services <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-trust">
+                    <span>Trusted by:</span>
+                    <div class="trust-logos">
+                        <span><i class="fas fa-building"></i> Local Business</span>
+                        <span><i class="fas fa-store"></i> Retail & E-com</span>
+                        <span><i class="fas fa-utensils"></i> Restaurants</span>
+                        <span><i class="fas fa-tools"></i> Contractors</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Tax Return Filed</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-chart-line"></i>
+                    <span>+23% Growth</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Compliant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <i class="fas fa-certificate"></i>
+                    <div>
+                        <strong>CPA Certified</strong>
+                        <span>Certified Public Accountants</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                        <strong>Secure & Private</strong>
+                        <span>Bank-level encryption</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-percentage"></i>
+                    <div>
+                        <strong>Audit Guarantee</strong>
+                        <span>We stand by our work</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Fast Turnaround</strong>
+                        <span>7-10 business days</span>
                     </div>
                 </div>
             </div>
@@ -64,90 +151,257 @@
     </section>
 
     <!-- Services Overview -->
-    <section class="services-overview" id="services">
+    <section class="services-preview" id="services">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Services</span>
                 <h2>Comprehensive Financial Solutions</h2>
-                <p>We offer a full range of bookkeeping and tax services tailored to your business needs.</p>
+                <p>From startup to scale-up, we provide end-to-end financial services tailored to your business stage.</p>
             </div>
+            
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📒</div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
                     <h3>Bookkeeping</h3>
-                    <p>Accurate financial record-keeping to keep your business organized and audit-ready.</p>
-                    <ul class="service-list">
-                        <li>Monthly financial statements</li>
-                        <li>Account reconciliation</li>
-                        <li>Expense tracking</li>
-                        <li>Payroll processing</li>
+                    <p>Clean, organized books that give you clarity and confidence in your business decisions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Monthly financial statements</li>
+                        <li><i class="fas fa-check"></i> Bank reconciliation</li>
+                        <li><i class="fas fa-check"></i> Expense categorization</li>
+                        <li><i class="fas fa-check"></i> Accounts payable/receivable</li>
                     </ul>
+                    <a href="services.html#bookkeeping" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📋</div>
+                
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
                     <h3>Tax Preparation</h3>
-                    <p>Maximize your refunds and minimize tax liability with expert tax planning.</p>
-                    <ul class="service-list">
-                        <li>Individual tax returns</li>
-                        <li>Business tax returns</li>
-                        <li>Quarterly estimates</li>
-                        <li>Tax planning strategies</li>
+                    <p>Strategic tax planning that minimizes liability and maximizes your bottom line.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Federal & State returns</li>
+                        <li><i class="fas fa-check"></i> Quarterly estimates</li>
+                        <li><i class="fas fa-check"></i> Tax planning strategies</li>
+                        <li><i class="fas fa-check"></i> IRS representation</li>
                     </ul>
+                    <a href="services.html#tax" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">💰</div>
-                    <h3>Payroll Services</h3>
-                    <p>Let us handle your payroll so you can focus on growing your business.</p>
-                    <ul class="service-list">
-                        <li>Direct deposit</li>
-                        <li>Tax form preparation</li>
-                        <li>Year-end reports</li>
-                        <li>Multi-state payroll</li>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>Payroll</h3>
+                    <p>Hassle-free payroll that keeps your team paid accurately and on time, every time.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Direct deposit</li>
+                        <li><i class="fas fa-check"></i> Tax form preparation</li>
+                        <li><i class="fas fa-check"></i> Multi-state payroll</li>
+                        <li><i class="fas fa-check"></i> Year-end reporting</li>
                     </ul>
+                    <a href="services.html#payroll" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Financial Consulting</h3>
-                    <p>Strategic financial advice to help your business thrive and grow profitably.</p>
-                    <ul class="service-list">
-                        <li>Cash flow analysis</li>
-                        <li>Budget development</li>
-                        <li>Financial forecasting</li>
-                        <li>Business valuation</li>
-                    </ul>
+            </div>
+            
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-outline-dark">View All Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <span class="section-tag">Why Shuman</span>
+                    <h2>More Than Just Numbers</h2>
+                    <p class="why-us-intro">We're not here to just crunch numbers. We're here to be your strategic financial partner.</p>
+                    
+                    <div class="why-us-list">
+                        <div class="why-us-item">
+                            <div class="why-us-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4>Personalized Attention</h4>
+                                <p>You get a dedicated bookkeeper who knows your business inside and out.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <div class="why-us-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4>Proactive Insights</h4>
+                                <p>We don't just report what happened—we tell you what it means and what to do next.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <div class="why-us-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h4>Modern Technology</h4>
+                                <p>Cloud-based solutions for real-time access to your financial data, anytime.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <div class="why-us-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Always Accessible</h4>
+                                <p>Direct access to your CPA—not a call center. We answer when you need us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-us-visual">
+                    <div class="visual-card">
+                        <div class="card-header">
+                            <span class="card-dot red"></span>
+                            <span class="card-dot yellow"></span>
+                            <span class="card-dot green"></span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-chart">
+                                <div class="chart-bar" style="--height: 60%; --delay: 0.1s"></div>
+                                <div class="chart-bar" style="--height: 80%; --delay: 0.2s"></div>
+                                <div class="chart-bar" style="--height: 45%; --delay: 0.3s"></div>
+                                <div class="chart-bar" style="--height: 90%; --delay: 0.4s"></div>
+                                <div class="chart-bar" style="--height: 70%; --delay: 0.5s"></div>
+                                <div class="chart-bar active" style="--height: 95%; --delay: 0.6s"></div>
+                            </div>
+                            <div class="card-stats">
+                                <div><span>Q1 Revenue</span><strong>$127,450</strong></div>
+                                <div><span>Expenses</span><strong>$42,120</strong></div>
+                                <div><span>Profit</span><strong class="profit">$85,330</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>Simple, Stress-Free Process</h2>
+                <p>Getting started is easy. No long-term contracts, no setup fees.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Book Free Call</h3>
+                        <p>Schedule a 15-minute discovery call to discuss your needs and see if we're a good fit.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Custom Proposal</h3>
+                        <p>We analyze your needs and send a tailored proposal with transparent pricing.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Seamless Onboarding</h3>
+                        <p>We handle the transition smoothly with minimal disruption to your operations.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Relax & Grow</h3>
+                        <p>Watch your financial clarity improve while you focus on what you do best.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Testimonials</span>
-                <h2>What Our Clients Say</h2>
-                <p>We've helped hundreds of businesses simplify their finances.</p>
+                <h2>Trusted by Local Businesses</h2>
+                <p>Don't just take our word for it—hear from some of our amazing clients.</p>
             </div>
+            
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Shuman Bookkeeping has been a game-changer for our business. Their attention to detail and proactive tax planning saved us thousands!"</p>
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="testimonial-date">January 2026</span>
+                    </div>
+                    <p class="testimonial-text">"Shuman Bookkeeping saved us during tax season. They found $15K in deductions we missed the year before. Their expertise is unmatched."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">JD</div>
+                        <div class="author-avatar">MR</div>
                         <div class="author-info">
-                            <strong>John Davidson</strong>
-                            <span>Owner, Davidson Manufacturing</span>
+                            <strong>Mike Rodriguez</strong>
+                            <span>Owner, Rodriguez Construction</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Professional, reliable, and always available when we need them. They handle all our bookkeeping so we can focus on serving customers."</p>
+                
+                <div class="testimonial-card featured">
+                    <div class="testimonial-badge">Featured Review</div>
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="testimonial-date">December 2025</span>
+                    </div>
+                    <p class="testimonial-text">"After struggling with QuickBooks for years, Shuman's team took over and simplified everything. I finally understand my business finances."</p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">SM</div>
+                        <div class="author-avatar">JL</div>
                         <div class="author-info">
-                            <strong>Sarah Mitchell</strong>
-                            <span>CEO, Mitchell Retail Group</span>
+                            <strong>Jennifer Liu</strong>
+                            <span>Founder, Bloom Bakery</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="testimonial-date">February 2026</span>
+                    </div>
+                    <p class="testimonial-text">"Professional, responsive, and incredibly knowledgeable. They handle all our payroll and tax prep. I couldn't run my restaurant without them."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DT</div>
+                        <div class="author-info">
+                            <strong>David Torres</strong>
+                            <span>Chef/Owner, La Familia Grill</span>
                         </div>
                     </div>
                 </div>
@@ -160,27 +414,35 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <span class="section-tag">Contact Us</span>
-                    <h2>Ready to Simplify Your Finances?</h2>
-                    <p>Schedule your free consultation today. We're here to help your business succeed.</p>
+                    <span class="section-tag">Let's Talk</span>
+                    <h2>Ready to Get Started?</h2>
+                    <p>Schedule your free 15-minute consultation. No pressure, no obligation—just honest advice about how we can help.</p>
+                    
+                    <div class="contact-cta-box">
+                        <div class="cta-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <strong>Prefer to talk now?</strong>
+                            <a href="tel:+15551234567" class="cta-phone">(555) 123-4567</a>
+                        </div>
+                    </div>
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-icon">📍</span>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div>
-                                <strong>Address</strong>
-                                <p>Serving the tri-state area</p>
+                                <strong>Office</strong>
+                                <p>123 Business Park Drive<br>Suite 100<br>City, State 12345</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📧</span>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <strong>Email</strong>
-                                <p>info@shumanbookkeeping.com</p>
+                                <p>hello@shumanbookkeeping.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">📞</span>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
                             <div>
                                 <strong>Phone</strong>
                                 <p>(555) 123-4567</p>
@@ -189,43 +451,63 @@
                     </div>
                     
                     <div class="business-hours">
-                        <h4>Business Hours</h4>
-                        <p>Monday - Friday: 9am - 6pm</p>
-                        <p>Saturday: By Appointment</p>
-                        <p>Sunday: Closed</p>
+                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                        <div class="hours-grid">
+                            <span>Monday - Friday</span>
+                            <span>8:00 AM - 6:00 PM</span>
+                            <span>Saturday</span>
+                            <span>By Appointment</span>
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h3>Request Consultation</h3>
+                        <p>Fill out the form below and we'll be in touch within 24 hours.</p>
+                    </div>
                     <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Smith">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Your Business LLC">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="john@company.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="service">Service Interest</label>
                             <select id="service" name="service">
                                 <option value="">Select a service...</option>
-                                <option value="bookkeeping">Bookkeeping</option>
+                                <option value="bookkeeping">Monthly Bookkeeping</option>
                                 <option value="tax-prep">Tax Preparation</option>
                                 <option value="payroll">Payroll Services</option>
-                                <option value="consulting">Financial Consulting</option>
+                                <option value="startup">Startup Advisory</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your business and how we can help..."></textarea>
+                            <label for="message">Tell Us About Your Needs *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="What challenges are you facing with your business finances?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Request
+                        </button>
+                        <p class="form-disclaimer"><i class="fas fa-lock"></i> Your information is secure and never shared.</p>
                     </form>
                 </div>
             </div>
@@ -238,51 +520,73 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
-                        <span class="logo-icon">📊</span>
-                        <span class="logo-text">Shuman Bookkeeping</span>
+                        <div class="logo-mark">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-company">Shuman</span>
+                            <span class="logo-tagline">Bookkeeping & Tax</span>
+                        </div>
                     </a>
-                    <p>Trusted professionals providing expert bookkeeping and tax preparation services to businesses since 2010.</p>
+                    <p>Trusted financial partner for businesses in the tri-state area. Delivering accuracy, compliance, and peace of mind since 2010.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                
                 <div class="footer-links">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html#bookkeeping">Bookkeeping</a></li>
-                        <li><a href="services.html#tax">Tax Preparation</a></li>
-                        <li><a href="services.html#payroll">Payroll Services</a></li>
-                        <li><a href="services.html#consulting">Financial Consulting</a></li>
+                        <li><a href="services.html">Bookkeeping</a></li>
+                        <li><a href="services.html">Tax Preparation</a></li>
+                        <li><a href="services.html">Payroll Services</a></li>
+                        <li><a href="services.html">Financial Consulting</a></li>
+                        <li><a href="services.html">Startup Services</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p><span>📧</span> info@shumanbookkeeping.com</p>
-                    <p><span>📞</span> (555) 123-4567</p>
-                    <p><span>📍</span> Serving tri-state area</p>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get tax tips and financial insights delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
                 </div>
             </div>
+            
             <div class="footer-bottom">
                 <p>&copy; 2026 Shuman Bookkeeping & Tax Preparation, SVC LLC. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                <div class="footer-badges">
+                    <span><i class="fas fa-certificate"></i> CPA Certified</span>
+                    <span><i class="fas fa-shield-alt"></i> Secure</span>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
 </body>
 </html>
